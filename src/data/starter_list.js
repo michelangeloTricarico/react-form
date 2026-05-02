@@ -1,0 +1,2 @@
+const articles = ["The Evolving Role of Web Developers in a Rapidly Changing Tech Landscape", "From Frontend to Full-Stack: Skills Every Modern Web Developer Needs", "How Web Developers Are Shaping the Future of Digital Experiences"]
+export default articles;
