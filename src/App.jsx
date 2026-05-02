@@ -13,6 +13,11 @@ function App() {
     setNewObj("")
   }
 
+  function RemoveElement(id){
+    let newList = objList.filter((item,index)=> index !=id)
+    setObjList(newList)
+  }
+
   return (
     <>
     <form>
@@ -22,7 +27,7 @@ function App() {
             onChange={e =>setNewObj(e.target.value)} 
             value={newObj} 
             className="form-control"
-            placeholder="Write a new object inside" />
+            placeholder="Write new article title" />
           <button onClick={AddElement} type="button" className="btn btn-dark" > + <br /> Add</button>
       </div>
       <div className="container d-flex gap-3 mt-3">
@@ -30,7 +35,7 @@ function App() {
           {
             objList.map((item, index) => <li className="list-group-item d-flex justify-content-between" key={index}>
               {item}
-              <button type="button" className="btn btn-danger">< i className="bi bi-trash3-fill"></i></button>
+              <button type="button" onClick={()=>RemoveElement(index)} className="btn btn-danger">< i className="bi bi-trash3-fill"></i></button>
               </li>)
           }
         </ul>
