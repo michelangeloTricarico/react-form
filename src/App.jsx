@@ -24,10 +24,8 @@ function App() {
 
   return (
     <>
-    <form>
       <Input_bar new_obj={newObj} set_new_obj={setNewObj} add_element={AddElement}/>
       <List_element obj_list={objList} remove_element={RemoveElement}/>
-    </form>
     </>
   )
 }
