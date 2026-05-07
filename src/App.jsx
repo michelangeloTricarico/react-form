@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import articles from './data/starter_list'
-import Input_bar from './components/input_bar'
-import List_element from './components/list_element'
+import articles from './data/StarterList.js'
+import Input_bar from './components/InputBar.jsx'
+import List_element from './components/ListElement.jsx'
 import './App.css'
 
 function App() {
